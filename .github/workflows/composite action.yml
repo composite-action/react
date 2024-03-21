@@ -11,10 +11,8 @@ jobs:
     runs-on: ubuntu-latest
    
     steps:
-      - name: Checkout Current Repository
-        uses: checkout/checkout@v2
-        with:
-          path: https://github.com/composite-action/react-webapp.git
-          
+      - uses: actions/checkout@v2
       - name: composite-action
         uses: composite-action/react-webapp@main
+
+
