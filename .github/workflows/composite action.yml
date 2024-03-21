@@ -13,6 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: composite-action
-        uses: composite-action/react@main
+        uses: composite-action/react-webapp@main
 
 
