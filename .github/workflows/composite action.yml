@@ -1,7 +1,7 @@
 # This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
 # For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
 
-name: using composite action in organisation repo
+name: using composite action 
 
 on:
   workflow_dispatch:
@@ -11,7 +11,10 @@ jobs:
     runs-on: ubuntu-latest
    
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Current Repository
+        uses: checkout/checkout@v2
+        with:
+          path: https://github.com/composite-action/react-webapp.git
           
       - name: composite-action
         uses: composite-action/react-webapp@main
