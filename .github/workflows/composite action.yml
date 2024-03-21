@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
    
     steps:
-      - uses: actions/checkout@v2
+      - uses: action/checkout@v2
       - name: composite-action
-        uses: composite-action/react-webapp@main
+        uses: composite-action/react@main
 
 
